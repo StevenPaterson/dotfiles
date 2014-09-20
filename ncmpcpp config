@@ -1,8 +1,3 @@
-####################################################
-## this is example configuration file, copy it to ##
-## ~/.ncmpcpp/config and set up your preferences  ##
-####################################################
-#
 ##### connection settings #####
 #
 ## set it in order to make tag editor and renaming files work properly
