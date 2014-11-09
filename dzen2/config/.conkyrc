@@ -1,0 +1,12 @@
+ background no
+ out_to_console yes
+ out_to_x no
+ update_interval 1.0
+ total_run_times 0
+ use_spacer none
+#mpd 
+mpd_host 127.0.0.7
+mpd_port 6600
+ 
+TEXT
+ ^fg(\#7691b8) ^i(/home/steven/.dzen2/icons/spkr_01.xbm) ${exec amixer get Master | egrep -o "[0-9]+%" | head -1 | egrep -o "[0-9]*"}% | ^i(/home/steven/.dzen2/icons/note.xbm) ${mpd_artist} - ${mpd_title} (${mpd_status}) | ^i(/home/steven/.dzen2/icons/cpu.xbm) ${cpu cpu1}% | ^i(/home/steven/.dzen2/icons/temp.xbm) ${acpitemp}c | ^i(/home/steven/.dzen2/icons/bat_full_01.xbm) ${battery_percent BAT0}% | ^i(/home/steven/.dzen2/icons/mem.xbm) $mem | ^i(/home/steven/.dzen2/icons/clock.xbm) ${time %a %b %d %I:%M%P }
