@@ -1,38 +1,50 @@
-URxvt.background:               #1F1F1F
-URxvt.foreground:               #FFFFFF
+!URxvt.background:               #1F1F1F
+!URxvt.foreground:               #FFFFFF
 URxvt.colorBD:                  #CFCFCF
 URxvt.colorUL:                  #969696
 URxvt.colorIT:                  #686868
 
-!Black
-*color0: #3d3d3d
-*color8: #5c5c5c
-!Red
-*color1: #7691b8
-*color9: #8aa8d4
-!Green
-*color2: #66a18d
-*color10: #80c9b0
-!Yellow
-*color3: #666294
-*color11: #8580c2
-!Blue
-*color4: #4763d1
-*color12: #5172e8
-!Magenta
-*color5: #776880
-*color13: #9784a3
-!Cyan
-*color6: #679da6
-*color14: #83b9d6
-!White
-*color7: #8b8e91
-*color15: #b3b6ba
+URxvt.background: #181512
+URxvt.foreground: #bea492
+
+!! black dark/light
+*color0: #332d29
+*color8: #817267
+
+!! red dark/light
+*color1: #8c644c
+*color9: #9f7155
+
+!! green dark/light
+*color2: #c4be90
+*color10: #bec17e
+
+!! yellow dark/light
+*color3: #bfba92
+*color11: #fafac0
+
+!! blue dark/light
+*color4: #646a6d
+*color12: #626e74
+
+!! magenta dark/light
+*color5: #6d6871
+*color13: #756f7b
+
+!! cyan dark/light
+*color6: #3b484a
+*color14: #444d4e
+
+!! white dark/light
+*color7: #504339
+*color15: #9a875f
+
+
 
 ! fonts
 ! run "fc-list" for a list of available fonts
-URxvt*font: xft:Terminus:size=12
-URxvt.letterSpace: 2
+URxvt*font: xft:tewi:size=9
+!URxvt.letterSpace: 1.5
 URxvt*scrollBar: False
 URxvt*scrollTtyOutput: False
 URxvt*scrollTtyKeypress: True
@@ -46,3 +58,6 @@ URxvt.matcher.button: 1
 URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 1
 
+!Dzen2
+dzen2.foreground: #ffffff
+dzen2.background: #1f1f1f
