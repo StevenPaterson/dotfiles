@@ -1,10 +1,10 @@
 :root {
     /* TAB VARIABLES */
-    --bg-light: #27221d; --bg-dark: #181512;
-    --fg-light: #bea492; --fg-dark: #bea492;
+    --bg-light: #2a2a2a; --bg-dark: #1f1f1f;
+    --fg-light: #ffffff; --fg-dark: #ffffff;
     --tab-height: 17px; --tab-triangle-correction: -1px; --tab-strip-margin: -12px;
     --tab-fonts: "tewi",monospace,"tewi"; --tab-font-size: 8pt;
-    --tab-triangle: block; /* block | none */
+    --tab-triangle: none; /* block | none */
 
     /* URL VARIABLES */
     --url-background: var(--bg-light); --url-color: #FFFFFF;
