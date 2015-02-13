@@ -4,46 +4,45 @@ URxvt.colorBD:                  #CFCFCF
 URxvt.colorUL:                  #969696
 URxvt.colorIT:                  #686868
 
-URxvt.background: #181512
-URxvt.foreground: #bea492
+URxvt.background: #1f1f1f
+URxvt.foreground: #ffffff
 
-!! black dark/light
-*color0: #332d29
-*color8: #817267
+!Black
+*color0:               #323246
+*color8:               #323246
 
-!! red dark/light
-*color1: #8c644c
-*color9: #9f7155
+!Red
+*color1:               #5A7882
+*color9:               #5A7882
 
-!! green dark/light
-*color2: #c4be90
-*color10: #bec17e
+!Green
+*color2:               #8C8CA0
+*color10:              #8C8CA0
 
-!! yellow dark/light
-*color3: #bfba92
-*color11: #fafac0
+!Yellow
+*color3:               #1E828C
+*color11:              #1E828C
 
-!! blue dark/light
-*color4: #646a6d
-*color12: #626e74
+!Blue
+*color4:               #3C788C
+*color12:              #3C788C
 
-!! magenta dark/light
-*color5: #6d6871
-*color13: #756f7b
+!Magenta
+*color5:               #6EA0B4
+*color13:              #6EA0B4
 
-!! cyan dark/light
-*color6: #3b484a
-*color14: #444d4e
+!Cyan
+*color6:               #6E8CA0
+*color14:              #6E8CA0
 
-!! white dark/light
-*color7: #504339
-*color15: #9a875f
-
-
+!White
+*color7:               #96BEC8
+*color15:              #96BEC8
 
 ! fonts
 ! run "fc-list" for a list of available fonts
 URxvt*font: xft:tewi:size=9
+!URxvt*font: xft:GohuFont:size=11
 !URxvt.letterSpace: 1.5
 URxvt*scrollBar: False
 URxvt*scrollTtyOutput: False
@@ -57,6 +56,7 @@ Urxvt.url-select.launcher: firefox
 URxvt.matcher.button: 1
 URxvt.cursorBlink: 1
 URxvt.cursorUnderline: 1
+
 
 !Dzen2
 dzen2.foreground: #ffffff
