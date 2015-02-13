@@ -10,4 +10,4 @@
  mpd_port 6600
  
 TEXT
- ^fg(\#bea492)  ^i(/home/steven/.dzen2/icons/cpu.xbm) ${cpu cpu1}% | ^i(/home/steven/.dzen2/icons/temp.xbm) ${acpitemp}c | ^i(/home/steven/.dzen2/icons/bat_full_01.xbm) ${battery_percent BAT0}% | ^i(/home/steven/.dzen2/icons/mem.xbm) $mem | ^i(/home/steven/.dzen2/icons/clock.xbm) ${time %a %b %d %I:%M%P }
+ ^fg(\#1b1b1b) ^bg(\#3c788c) ^i(/home/steven/.dzen2/icons/note.xbm) ${mpd_artist} - ${mpd_title} | ^i(/home/steven/.dzen2/icons/cpu.xbm) ${cpu cpu1}% | ^i(/home/steven/.dzen2/icons/temp.xbm) ${acpitemp}c | ^i(/home/steven/.dzen2/icons/bat_full_01.xbm) ${battery_percent BAT0}% | ^i(/home/steven/.dzen2/icons/mem.xbm) $mem | ^i(/home/steven/.dzen2/icons/clock.xbm) ${time %a %b %d %I:%M%P }
