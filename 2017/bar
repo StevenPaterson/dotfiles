@@ -1,0 +1,52 @@
+#Variables
+FONT=-misc-tamzen-medium-r-normal--20-*-*-*-*-*-iso8859-1
+ICON=FontAwesome
+BG=#1f1f1f
+FG=#ffffff
+H=20
+GEM=1920x$H
+
+
+#Get Date and Time
+clock(){
+     DATETIME=$(date "+%a %b %d, %T")
+
+     echo -n "%{r}%{B#3C788C} $DATETIME %{B-}"
+}
+
+#Get Desktop 
+desk() {
+    cur=`xprop -root _NET_CURRENT_DESKTOP | awk '{print $3}'`
+    
+    echo $(($cur + 1))       
+}
+
+workspaces() {
+    for workspace in `bspc query -D --names`
+    do
+        if [ $workspace = "`bspc query -d -D --names`" ]
+        then
+            workspaces="$workspaces%{B#3C788C} $workspace "
+        else
+            workspaces="$workspaces%{B-} $workspace "
+         fi
+    done
+    echo "%{l}$workspaces"
+}
+
+ncmpcpp(){
+    song=`mpc current`
+    echo "%{c}%{B#3C788C} $song %{B-}"
+}
+
+(
+while :; do
+    buf=""
+        buf="${buf} $(workspaces)"
+        buf="${buf} $(ncmpcpp)"
+        buf="${buf} $(clock) "
+
+    echo $buf
+	sleep 0.5
+done
+) | lemonbar -p -f "$FONT" -B "$BG" -F "$FG" -U "$FG" -g "$GEM" | sh
