@@ -6,12 +6,22 @@ FG=#ffffff
 H=20
 GEM=1920x$H
 
+#Colors
+COLOR0=#323246
+COLOR1=#5A7882
+COLOR2=#8C8CA0
+COLOR3=#1E828C
+COLOR4=#3C788C
+COLOR5=#6EA0B4
+COLOR6=#6E8CA0
+COLOR7=#96BEC8
+
 
 #Get Date and Time
 clock(){
      DATETIME=$(date "+%H:%M")
 
-     echo -n "%{r}%{B#3C788C} $DATETIME %{B-}"
+     echo -n "%{r}%{B$COLOR4} $DATETIME %{B-}"
 }
 
 #Get current workspace 
@@ -27,7 +37,7 @@ workspaces() {
     do
         if [ $workspace = "`bspc query -d -D --names`" ]
         then
-            workspaces="$workspaces%{B#3C788C} $workspace "
+            workspaces="$workspaces%{B$COLOR4} $workspace "
         else
             workspaces="$workspaces%{B-} $workspace "
          fi
@@ -38,7 +48,7 @@ workspaces() {
 #Get current playing track
 ncmpcpp(){
     song=`mpc current`
-    echo "%{c}%{B#3C788C} $song %{B-}"
+    echo "%{c}%{B$COLOR4} $song %{B-}"
 }
 
 (
