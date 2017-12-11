@@ -9,18 +9,19 @@ GEM=1920x$H
 
 #Get Date and Time
 clock(){
-     DATETIME=$(date "+%a %b %d, %T")
+     DATETIME=$(date "+%H:%M")
 
      echo -n "%{r}%{B#3C788C} $DATETIME %{B-}"
 }
 
-#Get Desktop 
+#Get current workspace 
 desk() {
     cur=`xprop -root _NET_CURRENT_DESKTOP | awk '{print $3}'`
     
     echo $(($cur + 1))       
 }
 
+#get bspwm workspaces
 workspaces() {
     for workspace in `bspc query -D --names`
     do
@@ -34,6 +35,7 @@ workspaces() {
     echo "%{l}$workspaces"
 }
 
+#Get current playing track
 ncmpcpp(){
     song=`mpc current`
     echo "%{c}%{B#3C788C} $song %{B-}"
